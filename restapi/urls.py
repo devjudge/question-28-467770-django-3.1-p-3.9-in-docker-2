@@ -13,9 +13,9 @@ from . import views
 
 def add_numbers(request):
     data = json.loads(request.body)
-    print('data: ', data)
+    # print('data: ', data)
     total = data['number1'] + data['number2']
-    print(total)
+    # print(total)
     return JsonResponse({'sum': total})
 
 urlpatterns = [
